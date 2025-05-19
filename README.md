@@ -1,12 +1,10 @@
 # 🩺 Medical FAQ Chatbot
 
-A GPT-4o-powered medical chatbot that answers questions about symptoms, medications, and health reports. Built with **FastAPI**, **Gradio**, and **OpenAI**, it supports natural conversation, PDF report summaries, and image-based queries (e.g., X-rays) for educational and research purposes.
 
----
 
 ## 🚀 Features
 
-- 💬 Chatbot interface using GPT-4o
+- 💬 Chatbot interface using Gimini
 - 🧠 Remembers the last 4 interactions for context
 - 📄 PDF (lab/report) upload and summarization
 - 🖼 X-ray image upload and analysis prompts (educational)
@@ -17,15 +15,15 @@ A GPT-4o-powered medical chatbot that answers questions about symptoms, medicati
 
 ## 📸 Screenshots
 
-| Welcome Page | Chat Interface |
-|----------------|-----------------|
-| ![Chat UI](static/img/intro.png) | ![X-ray Upload](static/img/question-answering.png) |
+Chat Interface |
+|-----------------|
+![X-ray Upload](static/img/question-answering.png) |
 
 ---
 
 ## 🛠 Tech Stack
 
-- **OpenAI GPT-4o**
+- **Gimini**
 - **FastAPI**
 - **Gradio (custom styled)**
 - **LangChain (for text extraction)**
@@ -69,8 +67,8 @@ Visit: http://localhost:8000
 ### 📁 .env Example
 
 ```
-OPENAI_API_KEY=your_openai_key_here
-MODEL_NAME=gpt-4o
+GEMINI_API_KEY=your_openai_key_here
+MODEL_NAME=gemini-1.5-flash
 MAX_TOKENS=800
 TEMPERATURE=0.3
 DEBUG=True
